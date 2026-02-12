@@ -28,10 +28,12 @@ size = Vector2(10, 10)
 subdivide_width = 10
 subdivide_depth = 10
 
+[sub_resource type="BoxMesh" id="BoxMesh_7dm0k"]
+
 [node name="Node3D" type="Node3D" unique_id=105017244]
 
 [node name="sol" type="DirectionalLight3D" parent="." unique_id=743345871]
-transform = Transform3D(1, 0, 0, 0, 0.0072779823, 0.99997354, 0, -0.99997354, 0.0072779823, 0, 3.0748286, 0)
+transform = Transform3D(0.39488813, -0.0066864947, -0.91870487, 0.9187292, 0.0028739888, 0.39487767, 0, -0.99997354, 0.0072779823, 0, 3.0748286, 0)
 light_energy = 0.8
 shadow_enabled = true
 
@@ -40,5 +42,9 @@ environment = SubResource("Environment_ig7tw")
 camera_attributes = SubResource("CameraAttributesPractical_ig7tw")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=508299172]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73949385, 0.6801628, -0.30579543)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73949385, 0.006127, -0.30579543)
 mesh = SubResource("PlaneMesh_7dm0k")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1976630075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52092314, 0)
+mesh = SubResource("BoxMesh_7dm0k")
