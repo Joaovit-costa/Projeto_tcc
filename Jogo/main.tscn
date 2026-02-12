@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://c0sa2uqx1ub38"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_7dm0k"]
+rayleigh_coefficient = 4.85
+rayleigh_color = Color(0.19807935, 0.533819, 0.7926567, 1)
+turbidity = 20.4
+ground_color = Color(0.5725772, 0.56559455, 1, 1)
+energy_multiplier = 2.0
+
+[sub_resource type="Sky" id="Sky_7dm0k"]
+sky_material = SubResource("PhysicalSkyMaterial_7dm0k")
+
+[sub_resource type="Environment" id="Environment_ig7tw"]
+background_mode = 2
+background_energy_multiplier = 1.33
+sky = SubResource("Sky_7dm0k")
+tonemap_mode = 2
+tonemap_exposure = 0.67
+adjustment_enabled = true
+adjustment_brightness = 1.1
+adjustment_contrast = 1.04
+adjustment_saturation = 1.33
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ig7tw"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7dm0k"]
+size = Vector2(10, 10)
+subdivide_width = 10
+subdivide_depth = 10
+
+[node name="Node3D" type="Node3D" unique_id=105017244]
+
+[node name="sol" type="DirectionalLight3D" parent="." unique_id=743345871]
+transform = Transform3D(1, 0, 0, 0, 0.0072779823, 0.99997354, 0, -0.99997354, 0.0072779823, 0, 3.0748286, 0)
+light_energy = 0.8
+shadow_enabled = true
+
+[node name="mundo" type="WorldEnvironment" parent="." unique_id=657877721]
+environment = SubResource("Environment_ig7tw")
+camera_attributes = SubResource("CameraAttributesPractical_ig7tw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=508299172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73949385, 0.6801628, -0.30579543)
+mesh = SubResource("PlaneMesh_7dm0k")
