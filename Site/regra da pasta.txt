@@ -1,2 +1,2 @@
-Nesta pasta favor colocar apenas arquivos de audio.
+Nesta pasta favor colocar apenas arquivos que criarão o site, conforme crecimento do site organize os html/css/JS em pastas.
 Apague esse bloco de notas quando já tiver algo na pagina.
