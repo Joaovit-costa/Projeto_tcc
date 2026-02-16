@@ -23,5 +23,17 @@ res://addons/zylann.hterrain/tools/generate_mesh_dialog.tscn::fd4e047b782cffb304
 res://addons/zylann.hterrain/tools/panel.tscn::b387b2b373602c4c0e09fa376ae349fb::1770991346::res://.godot/exported/133200997/export-6d2b1be5c2b1a865ce36fd18ac35e50d-panel.scn
 res://addons/zylann.hterrain/tools/progress_window.tscn::52b4204b77e8b1386bc654d21e05b776::1770991346::res://.godot/exported/133200997/export-cda084b2620f52992689d666e5404d5b-progress_window.scn
 res://addons/zylann.hterrain/tools/terrain_preview.tscn::c957c600dd3ccf378e35281504d434df::1770991346::res://.godot/exported/133200997/export-1069f0ca099718f66ed08c8088bd9309-terrain_preview.scn
-res://entidades/personagemPrincipal/personagem principal.tscn::0a6c381b1dde7aa9b7060f0a9220becd::1770990213::res://.godot/exported/133200997/export-b5bda93c6ef2f90f4d509bcc6918a978-personagem principal.scn
-res://main.tscn::a58d3e7c083a3ef7af3f2fc89a765cb2::1770991486::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://main.tscn::99d584a87e90b986d987329040b85715::1771106664::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://entidades/animaçoes/Player.tscn::e757c83df3c5178470955e30adf41c92::1771276261::res://.godot/exported/133200997/export-8bf5ef110552dc6720c045ccc8126bf1-Player.scn
+res://entidades/personagemPrincipal/personagemPrincipal.tscn::3bff1744d160b6537f0c0197b8a42264::1771221812::res://.godot/exported/133200997/export-caca79b77b52a8d60ad42e5aafa1e556-personagemPrincipal.scn
+res://Menus/MenusDeLobby/Lobby/Configuraçoes/Controles/Atalhos.tscn::ec0985889566b92f6d4fd234a6614d97::1771019515::res://.godot/exported/133200997/export-b485e1d0ea33b233a3671100ee424e8a-Atalhos.scn
+res://Menus/MenusDeLobby/Lobby/Configuraçoes/Controles/Combate.tscn::1ffdf70810bab97b1734c345a515a06c::1771019501::res://.godot/exported/133200997/export-04b47b858ec96e8791ca1955312cdda6-Combate.scn
+res://Menus/MenusDeLobby/Lobby/Configuraçoes/Controles/Controles.tscn::ec2e78f6f9f3b753b2430daed1d8802e::1771019466::res://.godot/exported/133200997/export-57a43c684a3f62a661d584c974571736-Controles.scn
+res://Menus/MenusDeLobby/Lobby/Configuraçoes/Controles/Movimentação.tscn::059c44b5c89dd0e6321007e6c57730ae::1771019490::res://.godot/exported/133200997/export-bbca01ad6d4e9b45df1aca71dab2ac92-Movimentação.scn
+res://Menus/MenusDeLobby/Lobby/Configuraçoes/Audio.tscn::1c317a8123e82e1ba4eb17ca7d2f6f00::1771019426::res://.godot/exported/133200997/export-95df8913a5c7ff2bf00fb7057f9713e1-Audio.scn
+res://Menus/MenusDeLobby/Lobby/Configuraçoes/Opção.tscn::6fc582dabc6693486c8802359871ae94::1771019546::res://.godot/exported/133200997/export-8dd566d4aec30a51404e0baa4cf64e8f-Opção.scn
+res://Menus/MenusDeLobby/Lobby/lobby.tscn::ebda7577d5e6aae758b69316896ab0dd::1771019115::res://.godot/exported/133200997/export-410478c026e60baa8a88eced7c09c22f-lobby.scn
+res://Menus/MenusDeLobby/LogIn_SingUp/Escolha inicialização.tscn::555f9b33f5616e050ad22d7c44331b82::1771019158::res://.godot/exported/133200997/export-496c915095d6b57aa69de568de4c105f-Escolha inicialização.scn
+res://Menus/MenusDeLobby/LogIn_SingUp/LogIn.tscn::ab5c21a06e23a31e5a111cc2df1d952c::1771019175::res://.godot/exported/133200997/export-fb9e4a426dd6ead579421a5d0cc62c0e-LogIn.scn
+res://Menus/MenusDeLobby/LogIn_SingUp/SingUp.tscn::6b2ceb758a65bb1824ab2ca011a41111::1771019191::res://.godot/exported/133200997/export-c9507ca9af47ca4fceed4730d441fc87-SingUp.scn
+res://Menus/Pause/Pause.tscn::af7392357471e6f00f81ae4053c501c5::1771019051::res://.godot/exported/133200997/export-71b2971065b9f3e9589f70ca88872114-Pause.scn
