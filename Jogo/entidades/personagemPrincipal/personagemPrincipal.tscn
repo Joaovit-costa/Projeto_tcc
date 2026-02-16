@@ -17,7 +17,7 @@ script = ExtResource("1_8orwu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0031229556, 0.62177277, 0.008048117)
 shape = SubResource("CapsuleShape3D_qkm84")
 
-[node name="Provisório" parent="CharacterBody3D" unique_id=1333481613 instance=ExtResource("2_evanw")]
+[node name="Player" parent="CharacterBody3D" unique_id=1333481613 instance=ExtResource("2_evanw")]
 
 [node name="cameraPivot2" type="Node3D" parent="." unique_id=1277670120 node_paths=PackedStringArray("target")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0031229556, 0.15265441, 0.008048117)

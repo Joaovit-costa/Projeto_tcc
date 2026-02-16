@@ -1,4 +1,2 @@
-res://entidades/personagemPrincipal/personagemPrincipal.tscn
-res://entidades/personagemPrincipal/provisório.tscn
-res://entidades/animaçoes/breathing_player.tscn
 res://entidades/animaçoes/Player.tscn
+res://entidades/personagemPrincipal/player.gd

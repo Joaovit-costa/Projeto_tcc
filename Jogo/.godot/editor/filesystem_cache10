@@ -1,5 +1,5 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1771186583
+::res://::1771268868
 export_presets.cfg::TextFile::-1::1770992059::0::1::::<><><>0<>0<><>::
 main.tscn::PackedScene::6564770550609941117::1771106664::0::1::::<><><>0<>0<><>::uid://c01hpb0kclge2::::res://entidades/personagemPrincipal/personagemPrincipal.tscn
 ::res://addons/::1770991342
@@ -207,13 +207,13 @@ logger.gd::GDScript::2138161228829475832::1770991346::0::1::::<>RefCounted<><>0<
 util.gd::GDScript::4988329749702672299::1770991346::0::1::::<>RefCounted<><>0<>1<><>::
 xyz_format.gd::GDScript::2495918735195581278::1770991347::0::1::::<>RefCounted<><>0<>1<><>::
 ::res://entidades/::1770988749
-::res://entidades/animaçoes/::1771186583
-Parado_Player.tscn::PackedScene::3276203882652381825::1771186335::0::1::::<><><>0<>0<><>::
-provisório.tscn::PackedScene::8630411070054679971::1771186570::0::1::::<><><>0<>0<><>::
-::res://entidades/personagemPrincipal/::1771186583
+::res://entidades/animaçoes/::1771270447
+Animation_player.glb::PackedScene::6957471108067995175::1771270447::1771270452::1::::<><><>0<>0<>b546bd63c1829ad5a59a8b4522725cc7<>res://.godot/imported/Animation_player.glb-d1d20d7ef18713beda54c6fd5ed0a9d4.scn::
+Player.tscn::PackedScene::8630411070054679971::1771220982::0::1::::<><><>0<>0<><>::
+::res://entidades/personagemPrincipal/::1771222939
 camera_pivot.gd::GDScript::7861195477871479269::1771106295::0::1::::<>Node3D<><>0<>0<><>::
-personagemPrincipal.tscn::PackedScene::6581688177401431475::1771184540::0::1::::<><><>0<>0<><>::uid://d4knbwxtcc3rp::::res://entidades/personagemPrincipal/player.gd<>uid://dkaa0gtxu3cxp::::res://entidades/personagemPrincipal/camera_pivot.gd
-player.gd::GDScript::9216174592732971025::1771106603::0::1::::<>CharacterBody3D<><>0<>0<><>::
+personagemPrincipal.tscn::PackedScene::6581688177401431475::1771221812::0::1::::<><><>0<>0<><>::uid://d4knbwxtcc3rp::::res://entidades/personagemPrincipal/player.gd<>uid://dkaa0gtxu3cxp::::res://entidades/personagemPrincipal/camera_pivot.gd<>uid://du7vuyqb14yxn::::res://entidades/animaçoes/Player.tscn
+player.gd::GDScript::9216174592732971025::1771222939::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://Menus/::1771024331
 ::res://Menus/MenusDeLobby/::1771024321
 ::res://Menus/MenusDeLobby/Lobby/::1771044282

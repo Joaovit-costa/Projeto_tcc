@@ -1,6 +1,8 @@
 extends CharacterBody3D
 
-
+@onready var player: Node3D = $Player
+@onready var animation_tree: AnimationTree = $Player/Animation_player/AnimationTree
+var suavizacao_da_animação = Vector2()
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
@@ -21,8 +23,13 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		var rotation_player = atan2(direction.x, direction.z)
+		player.rotation.y = lerp(player.rotation.y, rotation_player, delta * 5)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+	
+	suavizacao_da_animação = lerp(suavizacao_da_animação, input_dir, delta * 10)
+	animation_tree.set("parameters/blend_position", suavizacao_da_animação.length())
 
 	move_and_slide()
