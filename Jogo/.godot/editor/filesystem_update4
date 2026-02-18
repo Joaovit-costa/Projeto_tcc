@@ -1,2 +1,4 @@
-res://entidades/personagemPrincipal/player.gd
-res://entidades/animaçoes/Player.tscn
+res://Scenes/entidades/animaçoes/Player/player.tscn
+res://Scripts/PersonagemPricipal/player.gd
+res://Scenes/entidades/personagemPrincipal/personagemPrincipal.tscn
+res://main.tscn

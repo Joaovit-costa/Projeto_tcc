@@ -1,17 +1,23 @@
 extends CharacterBody3D
-
+@onready var animation_tree: AnimationTree = $Player/Animacoes_player/AnimationTree
 @onready var player: Node3D = $Player
-@onready var animation_tree: AnimationTree = $Player/Animation_player/AnimationTree
+@onready var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+@onready var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+@onready var collision_shape_3d: CollisionShape3D = $CollisionShape3D
 
 # =========================
 # CONFIGURAÇÕES
 # =========================
-@export var speed := 2.5
+@export var speed := 2.7
 @export var sprint_speed := 4.0
-@export var acceleration := 4.5
-@export var friction := 20.0
-@export var rotation_speed := 2.7
-@export var jump_velocity := 3.7
+@export var acceleration := 4.9
+@export var friction := 25.0
+@export var rotation_speed := 3.1
+@export var jump_velocity := 3.2
+@export var jump_delay := 0.4
+@export var collider_normal_y := 0.65
+@export var collider_crouch_y := 10.0
+@export var collider_lerp_speed := 1.0
 
 # =========================
 # VARIÁVEIS
@@ -19,7 +25,8 @@ extends CharacterBody3D
 var suavizacao_da_animacao: Vector2 = Vector2.ZERO
 var transicion_animation := 0.0
 var is_sprinting := false
-
+var jump_requested := false
+var jump_timer := 0.0
 
 func _physics_process(delta: float) -> void:
 	# =========================
@@ -31,14 +38,40 @@ func _physics_process(delta: float) -> void:
 	# =========================
 	# PULO
 	# =========================
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = jump_velocity
+	
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() \
+	and !animation_tree.get("parameters/OneShot/active"):
+		jump_requested = true
+		jump_timer = 0.0
 
+		animation_tree.set(
+			"parameters/OneShot/request",
+			AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE
+		)
+	
+	if jump_requested:
+		jump_timer += delta
+		if jump_timer >= jump_delay / 1.01:
+			collision_shape_3d.position.y = lerp(
+			collision_shape_3d.position.y,
+			collider_crouch_y,
+			delta * collider_lerp_speed)
+
+		if jump_timer >= jump_delay:
+			velocity.y = jump_velocity
+			jump_requested = false
+	else:
+		collision_shape_3d.position.y = lerp(
+		collision_shape_3d.position.y,
+		collider_normal_y,
+		delta * collider_lerp_speed * 1.6)
+		
 	# =========================
 	# INPUT
 	# =========================
-	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	if is_on_floor():
+		direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 
 	# =========================
 	# SPRINT
@@ -80,10 +113,11 @@ func _physics_process(delta: float) -> void:
 		anim_blend = 0.4
 	else:
 		anim_blend = 0.0
-	anim_blend = clamp(anim_blend, 0.0, 1.0)
+	
+	anim_blend = clamp(anim_blend, 0.0, 1.2)
 	transicion_animation = lerp(transicion_animation, anim_blend, delta * 4)
 
-	animation_tree.set("parameters/blend_position", transicion_animation)
+	animation_tree.set("parameters/BlendSpace1D/blend_position", transicion_animation)
 
 	# =========================
 	# APLICAR MOVIMENTO

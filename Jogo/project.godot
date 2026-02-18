@@ -26,6 +26,10 @@ window/handheld/orientation=4
 
 enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 ui_left={

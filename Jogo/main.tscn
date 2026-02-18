@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c0sa2uqx1ub38"]
 
-[ext_resource type="PackedScene" uid="uid://c01hpb0kclge2" path="res://entidades/personagemPrincipal/personagemPrincipal.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://d4dqalex18ula" path="res://Scenes/entidades/personagemPrincipal/personagemPrincipal.tscn" id="1_ig7tw"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_7dm0k"]
 rayleigh_coefficient = 4.85
@@ -35,9 +35,10 @@ data = PackedVector3Array(5, 0, 5, 4.0909, 0, 5, 5, 0, 4.0909, 4.0909, 0, 5, 4.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_7dm0k"]
 lightmap_size_hint = Vector2i(104, 156)
+size = Vector3(1, 0.8, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0xm2m"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+data = PackedVector3Array(-0.5, 0.39999998, 0.5, 0.5, 0.39999998, 0.5, -0.5, -0.39999998, 0.5, 0.5, 0.39999998, 0.5, 0.5, -0.39999998, 0.5, -0.5, -0.39999998, 0.5, 0.5, 0.39999998, -0.5, -0.5, 0.39999998, -0.5, 0.5, -0.39999998, -0.5, -0.5, 0.39999998, -0.5, -0.5, -0.39999998, -0.5, 0.5, -0.39999998, -0.5, 0.5, 0.39999998, 0.5, 0.5, 0.39999998, -0.5, 0.5, -0.39999998, 0.5, 0.5, 0.39999998, -0.5, 0.5, -0.39999998, -0.5, 0.5, -0.39999998, 0.5, -0.5, 0.39999998, -0.5, -0.5, 0.39999998, 0.5, -0.5, -0.39999998, -0.5, -0.5, 0.39999998, 0.5, -0.5, -0.39999998, 0.5, -0.5, -0.39999998, -0.5, 0.5, 0.39999998, 0.5, -0.5, 0.39999998, 0.5, 0.5, 0.39999998, -0.5, -0.5, 0.39999998, 0.5, -0.5, 0.39999998, -0.5, 0.5, 0.39999998, -0.5, -0.5, -0.39999998, 0.5, 0.5, -0.39999998, 0.5, -0.5, -0.39999998, -0.5, 0.5, -0.39999998, 0.5, 0.5, -0.39999998, -0.5, -0.5, -0.39999998, -0.5)
 
 [node name="Node3D" type="Node3D" unique_id=105017244]
 
@@ -62,17 +63,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73949385, 0.006127, -0.3057
 mesh = SubResource("PlaneMesh_7dm0k")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1231862471]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73949385, 0.006127, -0.30579543)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73949385, 0.013785481, -0.30579543)
 shape = SubResource("ConcavePolygonShape3D_ig7tw")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D" unique_id=1976630075]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52092314, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41378534, 0)
 mesh = SubResource("BoxMesh_7dm0k")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1785432523]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52092314, 0)
-visible = false
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1014090793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41378534, 0)
 shape = SubResource("ConcavePolygonShape3D_0xm2m")
 
 [node name="PersonagemPrincipal" parent="." unique_id=28925119 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6889431, 0, 0)

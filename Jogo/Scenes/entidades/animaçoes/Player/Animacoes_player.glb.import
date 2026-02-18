@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c6eisd0khgvul"
-path="res://.godot/imported/Animation_player.glb-d1d20d7ef18713beda54c6fd5ed0a9d4.scn"
+uid="uid://k2483uugnnad"
+path="res://.godot/imported/Animacoes_player.glb-46d5da98a93cc0309df47697005c69ca.scn"
 
 [deps]
 
-source_file="res://entidades/animaçoes/Animation_player.glb"
-dest_files=["res://.godot/imported/Animation_player.glb-d1d20d7ef18713beda54c6fd5ed0a9d4.scn"]
+source_file="res://Scenes/entidades/animaçoes/Player/Animacoes_player.glb"
+dest_files=["res://.godot/imported/Animacoes_player.glb-46d5da98a93cc0309df47697005c69ca.scn"]
 
 [params]
 
@@ -39,7 +39,7 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "animations": {
-"Andando": {
+"Andar": {
 "save_to_file/enabled": false,
 "save_to_file/fallback_path": "",
 "save_to_file/keep_custom_tracks": "",
