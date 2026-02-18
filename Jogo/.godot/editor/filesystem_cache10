@@ -1,7 +1,7 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1771372234
+::res://::1771387511
 export_presets.cfg::TextFile::-1::1771276411::0::1::::<><><>0<>0<><>::
-main.tscn::PackedScene::6564770550609941117::1771369859::0::1::::<><><>0<>0<><>::res://Scenes/entidades/personagemPrincipal/personagemPrincipal.tscn
+main.tscn::PackedScene::6564770550609941117::1771380095::0::1::::<><><>0<>0<><>::uid://d4dqalex18ula::::res://Scenes/entidades/personagemPrincipal/personagemPrincipal.tscn
 ::res://addons/::1770991342
 ::res://addons/zylann.hterrain/::1770991348
 hterrain.gd::GDScript::3942939355119751996::1770991343::0::1::::<>Node3D<><>0<>1<><>::
@@ -209,11 +209,11 @@ xyz_format.gd::GDScript::2495918735195581278::1770991347::0::1::::<>RefCounted<>
 ::res://Scenes/::1771369309
 ::res://Scenes/entidades/::1771366176
 ::res://Scenes/entidades/animaçoes/::1771369077
-::res://Scenes/entidades/animaçoes/Player/::1771372234
-Animacoes_player.glb::PackedScene::759447862196171647::1771369492::1771372235::1::::<><><>0<>0<>e3b4cd75ac34dde8a0396801b84f3a8d<>res://.godot/imported/Animacoes_player.glb-46d5da98a93cc0309df47697005c69ca.scn::
-player.tscn::PackedScene::8221269160081438243::1771372234::0::1::::<><><>0<>0<><>::uid://k2483uugnnad::::res://Scenes/entidades/animaçoes/Player/Animacoes_player.glb
-::res://Scenes/entidades/personagemPrincipal/::1771371107
-personagemPrincipal.tscn::PackedScene::9201903706745834318::1771371107::0::1::::<><><>0<>0<><>::uid://d4knbwxtcc3rp::::res://Scripts/PersonagemPricipal/player.gd<>uid://dpepdp3a3aevj::::res://Scenes/entidades/animaçoes/Player/player.tscn<>uid://dkaa0gtxu3cxp::::res://Scripts/PersonagemPricipal/camera_pivot.gd
+::res://Scenes/entidades/animaçoes/Player/::1771387511
+Animacoes_player.glb::PackedScene::6981685741799613278::1771387408::1771387512::1::::<><><>0<>0<>64d2edfbdafd3bcacbb1b960c23b83d5<>res://.godot/imported/Animacoes_player.glb-46d5da98a93cc0309df47697005c69ca.scn::
+player.tscn::PackedScene::8221269160081438243::1771376429::0::1::::<><><>0<>0<><>::uid://k2483uugnnad::::res://Scenes/entidades/animaçoes/Player/Animacoes_player.glb
+::res://Scenes/entidades/personagemPrincipal/::1771380467
+personagemPrincipal.tscn::PackedScene::9201903706745834318::1771380467::0::1::::<><><>0<>0<><>::uid://d4knbwxtcc3rp::::res://Scripts/PersonagemPricipal/player.gd<>uid://dpepdp3a3aevj::::res://Scenes/entidades/animaçoes/Player/player.tscn<>uid://dkaa0gtxu3cxp::::res://Scripts/PersonagemPricipal/camera_pivot.gd
 ::res://Scenes/Menus/::1771366176
 ::res://Scenes/Menus/MenusDeLobby/::1771366176
 ::res://Scenes/Menus/MenusDeLobby/Lobby/::1771369316
@@ -233,6 +233,6 @@ SingUp.tscn::PackedScene::-1::1771369316::0::1::::<><><>0<>0<><>::
 ::res://Scenes/Menus/Pause/::1771369316
 Pause.tscn::PackedScene::-1::1771369316::0::1::::<><><>0<>0<><>::
 ::res://Scripts/::1771280521
-::res://Scripts/PersonagemPricipal/::1771372039
+::res://Scripts/PersonagemPricipal/::1771380684
 camera_pivot.gd::GDScript::7861195477871479269::1771366183::0::1::::<>Node3D<><>0<>0<><>::
-player.gd::GDScript::9216174592732971025::1771372039::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.gd::GDScript::9216174592732971025::1771380684::0::1::::<>CharacterBody3D<><>0<>0<><>::

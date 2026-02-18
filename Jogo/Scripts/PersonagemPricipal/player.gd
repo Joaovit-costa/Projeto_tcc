@@ -10,7 +10,7 @@ extends CharacterBody3D
 # =========================
 @export var speed := 2.7
 @export var sprint_speed := 4.0
-@export var acceleration := 4.9
+@export var acceleration := 5.9
 @export var friction := 25.0
 @export var rotation_speed := 3.1
 @export var jump_velocity := 3.2
@@ -27,6 +27,7 @@ var transicion_animation := 0.0
 var is_sprinting := false
 var jump_requested := false
 var jump_timer := 0.0
+var current_speed : float
 
 func _physics_process(delta: float) -> void:
 	# =========================
@@ -70,14 +71,28 @@ func _physics_process(delta: float) -> void:
 	# INPUT
 	# =========================
 	input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	if is_on_floor():
+	if is_on_floor() and !animation_tree.get("parameters/Combate/active"):
 		direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-
+	
 	# =========================
 	# SPRINT
 	# =========================
 	is_sprinting = Input.is_action_pressed("run") and is_on_floor()
-	var current_speed := sprint_speed if is_sprinting else speed
+	if !animation_tree.get("parameters/Combate/active"):
+		current_speed = sprint_speed if is_sprinting else speed
+		
+	# =========================
+	# PUNCH
+	# =========================
+	if Input.is_action_pressed("Punching") and !animation_tree.get("parameters/Combate/active"):
+		transicion_animation = lerp(transicion_animation, -0.4, delta * 10)
+
+		animation_tree.set("parameters/BlendSpace1D/blend_position", transicion_animation)
+		current_speed = 0.7
+		
+		animation_tree.set(
+			"parameters/Combate/request",
+			AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
 
 	# =========================
 	# MOVIMENTO COM ACELERAÇÃO
